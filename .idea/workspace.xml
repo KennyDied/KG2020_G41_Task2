@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18f50e70-e13d-439e-b9fe-4a7aa9cb3ec9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/PixelDrawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/pixel_drawers/GraphicsPixelDrawer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2Demo/META-INF/Task2Demo.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task2Demo/ru/vsu/cs/kg2020/danila/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task2Demo/ru/vsu/cs/kg2020/danila/DrawPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/DrawPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/DDALineDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/DDALineDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/WuLineDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/WuLineDrawer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

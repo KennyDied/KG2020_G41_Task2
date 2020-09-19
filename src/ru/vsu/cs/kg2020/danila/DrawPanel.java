@@ -1,6 +1,8 @@
 package ru.vsu.cs.kg2020.danila;
 
+import ru.vsu.cs.kg2020.danila.line_drawers.DDALineDrawer;
 import ru.vsu.cs.kg2020.danila.line_drawers.GraphicsLineDrawer;
+import ru.vsu.cs.kg2020.danila.pixel_drawers.GraphicsPixelDrawer;
 import ru.vsu.cs.kg2020.danila.utils.DrawUtils;
 
 import javax.swing.*;
@@ -19,13 +21,17 @@ public class DrawPanel extends JPanel implements MouseMotionListener {
 
     @Override
     public void paint(Graphics g) {
-        BufferedImage bi = new BufferedImage(getWidth(), getHeight(), BufferedImage.TYPE_INT_BGR);
+        BufferedImage bi = new BufferedImage(getWidth(), getHeight(), BufferedImage.TYPE_INT_RGB);
         Graphics bi_g = bi.createGraphics();
         bi_g.setColor(Color.WHITE);
-        bi_g.fillRect(0,0, getWidth(), getHeight());
+        bi_g.fillRect(0, 0, getWidth(), getHeight());
         bi_g.setColor(Color.BLACK);
-        LineDrawer ld = new GraphicsLineDrawer(bi_g);
+
+        PixelDrawer pd = new GraphicsPixelDrawer(bi_g);
+        LineDrawer ld = new DDALineDrawer(pd);
+
         drawAll(ld);
+
         g.drawImage(bi, 0, 0, null);
         bi_g.dispose();
     }

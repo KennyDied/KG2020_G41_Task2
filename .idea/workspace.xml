@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="18f50e70-e13d-439e-b9fe-4a7aa9cb3ec9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task2Demo/ru/vsu/cs/kg2020/danila/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task2Demo/ru/vsu/cs/kg2020/danila/DrawPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/DrawPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/BresenthamLineDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/BresenthamLineDrawer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +27,8 @@
   <component name="ProjectId" id="1hdrHjbU3d3Wn6HwLdETfVrZFEY" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KG2020_G41_Task1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -78,7 +81,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -12,8 +12,7 @@ public class BresenthamLineDrawer implements LineDrawer {
         this.pd = pd;
     }
 
-
-    private int sign (int x) {
+    private int sign(int x) {
         return Integer.compare(x, 0);
         //возвращает 0, если x равен нулю; -1, если x < 0 и 1, если x > 0.
     }
@@ -26,8 +25,8 @@ public class BresenthamLineDrawer implements LineDrawer {
         int incx = sign(dx);   //Определяем, в какую сторону нужно будет сдвигаться. Если dx < 0, т.е. отрезок идёт справа налево по иксу, то incx будет равен -1.
         int incy = sign(dy);   //Рисуем отрезок снизу вверх - отрицательный сдвиг для y (иначе - положительный)
 
-        dx = Math.abs(dx);     //сравнивнение: "if (dx < dy)"
-        dy = Math.abs(dy);     //необходимо сделать dx = |dx|; dy = |dy|
+        dx = Math.abs(dx);
+        dy = Math.abs(dy);
 
         int pdx, pdy, es, el;  //Смотрим куда больше проекция - высокий или длинный отрезок и в зависимости от этого рисуем соответственно по y(высокий) или по х(длинный)
         if (dx > dy) {         //Горизонталь
@@ -53,7 +52,7 @@ public class BresenthamLineDrawer implements LineDrawer {
                 x += incx;                      //Сместить вверх или вниз, если цикл идет по x
                 y += incy;                      //Сместить влево-вправо, если цикл идет по y
             } else {
-                x += pdx;                       //Продолжить тянуть прямую дальше (сдвинуть влево или вправо, если цикл идёт по x)
+                x += pdx;                       //Тянуть прямую дальше (сдвинуть влево или вправо, если цикл идёт по x)
                 y += pdy;                       //Сдвинуть вверх или вниз (если по y)
             }
             pd.setPixel(x, y, Color.BLACK);     //Конечная точка

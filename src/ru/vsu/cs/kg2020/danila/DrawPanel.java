@@ -1,9 +1,6 @@
 package ru.vsu.cs.kg2020.danila;
 
-import ru.vsu.cs.kg2020.danila.line_drawers.BresenthamLineDrawer;
-import ru.vsu.cs.kg2020.danila.line_drawers.DDALineDrawer;
-import ru.vsu.cs.kg2020.danila.line_drawers.GraphicsLineDrawer;
-import ru.vsu.cs.kg2020.danila.line_drawers.WuLineDrawer;
+import ru.vsu.cs.kg2020.danila.line_drawers.*;
 import ru.vsu.cs.kg2020.danila.pixel_drawers.GraphicsPixelDrawer;
 import ru.vsu.cs.kg2020.danila.utils.DrawUtils;
 
@@ -33,7 +30,6 @@ public class DrawPanel extends JPanel implements MouseMotionListener {
         LineDrawer ld = new DDALineDrawer(pd);                  //DDA
         LineDrawer ld2 = new BresenthamLineDrawer(pd);          //Bresentham
         LineDrawer ld3 = new WuLineDrawer(pd);                  //Wuuuuuu
-
         drawAll(ld3);
 
         g.drawImage(bi, 0, 0, null);
@@ -41,7 +37,7 @@ public class DrawPanel extends JPanel implements MouseMotionListener {
     }
 
     private void drawAll (LineDrawer ld) {
-        DrawUtils.drawSnowflake(ld,200, 200, 50, 25);
+        DrawUtils.drawSnowflake(ld,200, 300, 70, 64);
         ld.drawLine(getWidth() / 2, getHeight() / 2, position.x, position.y);
     }
 

@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task2Demo/ru/vsu/cs/kg2020/danila/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task2Demo/ru/vsu/cs/kg2020/danila/DrawPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/BresenthamLineDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/BresenthamLineDrawer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/WuLineDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/vsu/cs/kg2020/danila/line_drawers/WuLineDrawer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

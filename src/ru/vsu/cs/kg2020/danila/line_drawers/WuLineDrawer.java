@@ -22,48 +22,42 @@ public class WuLineDrawer implements LineDrawer {
     }
 
     void drawPixel(int x, int y, double brightness) {
-        int c = (int)(255 * brightness);
-        pd.setPixel(x, y, new Color(c, c, c));
+        int c = (int)(255 * (1 - brightness));
+        pd.setPixel(x, y, new Color(0, 0, 0, c));
     }
 
-    //Реализовать ВУ на основе Bresenham без double
     @Override
     public void drawLine(int x1, int y1, int x2, int y2) {
         //Похоже на DDA, определяем крутизну - откуда рисовать (определяем какие линни рисовать - вертикальные(steep = true) или горизонтальные(false))
-        boolean steep = Math.abs((y2 - y1)) > Math.abs((x2 - x1));
+        boolean steep = Math.abs(y2 - y1) > Math.abs(x2 - x1);
         if (steep){
-            int tmp = x1;
-            x1 = y1; y1 = tmp; tmp = x2;
-            x2 = y2; y2 = tmp;
+            int tmp = x1; x1 = y1; y1 = tmp;
+            tmp = x2; x2 = y2; y2 = tmp;
         }
         if (x1 > x2){
             int tmp = x1; x1 = x2; x2 = tmp;
             tmp = y1; y1 = y2; y2 = tmp;
         }
 
-        double dx = x2 - x1;
-        double dy = y2 - y1;
-        double gradient = dy / dx;
-
-        if (dx == 0.0){
-            gradient = 1;
-        }
+        int dx = x2 - x1;
+        int dy = y2 - y1;
+        double gradient = (double)dy / (double)dx;
 
         int pixelX1 = x1;
         int pixelX2 = x2;
         double intersectY = y1;     //реальный y
 
-        //рисуем саму линию
-        if (steep) {  //ветикально
+//рисуем саму линию
+        if (steep) {  //вертикально
             for (int x = pixelX1 ; x <= pixelX2 ; x++) {
-                drawPixel((int)(intersectY), x, relationOfFirstPoint(intersectY));
-                drawPixel((int)(intersectY) - 1, x, relationOfSecondPoint(intersectY));
+                drawPixel((int)(intersectY) + 1, x, relationOfFirstPoint(intersectY));
+                drawPixel((int)(intersectY), x, relationOfSecondPoint(intersectY));
                 intersectY += gradient;
             }
         } else {   //горизонтально
             for (int x = pixelX1; x <= pixelX2; x++) {
-                drawPixel(x, (int)(intersectY), relationOfFirstPoint(intersectY));
-                drawPixel(x, (int)(intersectY) - 1, relationOfSecondPoint(intersectY));
+                drawPixel(x, (int)(intersectY) + 1, relationOfFirstPoint(intersectY));
+                drawPixel(x, (int)(intersectY), relationOfSecondPoint(intersectY));
                 intersectY += gradient;
             }
         }
